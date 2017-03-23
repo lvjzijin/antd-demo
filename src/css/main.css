@@ -1,0 +1,14 @@
+.header{
+    height:44px;
+    background: #ccc;
+    font-size: 16px;
+}
+.nav li{
+    width:100px;
+    display: inline-block;
+    line-height:44px;
+    text-align: center;
+}
+.nav li:hover{
+    background: #eee;
+}
