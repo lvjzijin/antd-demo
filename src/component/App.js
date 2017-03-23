@@ -1,9 +1,10 @@
 import React from 'react';
-import {Tabs,Spin,Progress,Icon,Menu,Dropdown,Collapse,Carousel,Alert,TimePicker,message,Button,Row,Col,Input,InputNumber,Radio,Select,Slider,Switch} from 'antd';
+import {Tabs,Steps,Spin,Progress,Icon,Menu,Dropdown,Collapse,Carousel,Alert,TimePicker,message,Button,Row,Col,Input,InputNumber,Radio,Select,Slider,Switch} from 'antd';
 import Header from './layout/header';
 import Login from './common/login';
 import moment from 'moment';
 var Panel = Collapse.Panel;
+var Step = Steps.Step;
 const RadioGroup = Radio.Group;
 const RadioButton = Radio.Button;
 const Option = Select.Option;
@@ -45,6 +46,22 @@ const App = React.createClass({
           <Menu.Divider />
           <Menu.Item key="3" disabled>3d menu item（disabled）</Menu.Item>
       </Menu>);
+      var steps=[{
+        title: '已完成',
+        description: '这里是多信息的描述啊'
+      }, {
+        title: '进行中',
+        description: '这里是多信息的耶哦耶哦哦耶哦耶'
+      }, {
+        title: '又一个待运行',
+        description: '描述啊描述啊'
+      }, {
+        title: '待运行',
+        description: '这里是多信息的描述啊'
+      }]
+      var contentSteps = steps.map((item,index)=>{
+          return <Step key={index} title={item.title} description={item.description}/>
+      })
         return <div>
             <Header/>
             <div className="container">
@@ -177,6 +194,13 @@ const App = React.createClass({
                         <TabPane tab="选项八" key="8">选项卡八</TabPane>
                         <TabPane tab="选项九" key="9">选项卡九</TabPane>
                     </Tabs>
+                    <Steps current={1}>{contentSteps}</Steps>
+                    <Steps direction="vertical" current={1}>
+                        <Step title="Finished" description="This is a description." />
+                        <Step title="In Progress" description="This is a description." />
+                        <Step title="Waiting" description="This is a description." />
+                    </Steps>
+
                 </div>
                 <div className="right-layout">
                     <Login/>
