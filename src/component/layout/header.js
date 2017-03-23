@@ -3,17 +3,18 @@
  */
 'use strict';
 import React from 'react';
+import {Row,Col} from 'antd';
 class Header extends React.Component{
   render(){
     return (
       <nav className="header">
-        <ul className="nav">
-          <li>Ucloud</li>
-          <li>ant-design</li>
-          <li>d3</li>
-          <li>前端技能</li>
-          <li>后端需掌握</li>
-        </ul>
+        <Row className="nav">
+          <Col span="2" offset={2}>Ucloud</Col>
+          <Col span="2">ant-design</Col>
+          <Col span="2">d3</Col>
+          <Col span="2">前端技能</Col>
+          <Col span="2">后端需掌握</Col>
+        </Row>
       </nav>
     )
   }

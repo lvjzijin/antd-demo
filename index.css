@@ -6,3 +6,9 @@ body{
 html, body, #root {
   height: 100%;
 }
+.m10{margin:10px;}
+.ml5{margin-left: 5px;}
+.ml10{margin-left:10px;}
+.ml20{margin-left:20px;}
+.fr{float:right;}
+.fl{float:left;}

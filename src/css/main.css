@@ -1,14 +1,67 @@
+.container{
+    width:80%;
+    margin:0 auto;
+    min-height: 500px;
+    height:100%;
+}
+.left-layout{
+    width:20%;
+    background: red;
+    float:left;
+    height:100%;
+}
+.content{
+    width:60%;
+    border: 1px solid #cccccc;
+    float:left;
+    height:100%;
+}
+.right-layout{
+    width:20%;
+    border: 1px solid #cccccc;
+    float:right;
+    height:100%;
+}
+.carousel{
+    text-align: center;
+    height: 160px;
+    line-height: 160px;
+    background: #364d79;
+    color: #fff;
+    overflow: hidden;
+}
+.collapse{
+    font-size: 16px;
+}
+.login{
+    margin-top:20px;
+}
+input{
+    border-radius: 2px;
+}
+.ant-rember{
+    display: inline-block;
+}
+
 .header{
     height:44px;
     background: #ccc;
     font-size: 16px;
 }
-.nav li{
+.nav div{
+    height:44px;
     width:100px;
     display: inline-block;
     line-height:44px;
     text-align: center;
 }
-.nav li:hover{
+.nav div:hover{
     background: #eee;
+}
+.example {
+    text-align: center;
+    background: rgba(0,0,0,0.05);
+    border-radius: 4px;
+    padding: 30px 50px;
+    margin: 20px 0;
 }
