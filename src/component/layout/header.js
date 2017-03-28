@@ -9,7 +9,7 @@ class Header extends React.Component{
     return (
       <nav className="header">
         <Row className="nav">
-          <Col span="2" offset={2}>Ucloud</Col>
+          <Col span="2" offset={2}><a href="/">Ucloud</a></Col>
           <Col span="2">ant-design</Col>
           <Col span="2">d3</Col>
           <Col span="2">前端技能</Col>

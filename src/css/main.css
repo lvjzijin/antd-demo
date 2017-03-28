@@ -6,7 +6,7 @@
 }
 .left-layout{
     width:20%;
-    background: red;
+    border: 1px solid #cccccc;
     float:left;
     height:100%;
 }
@@ -15,6 +15,7 @@
     border: 1px solid #cccccc;
     float:left;
     height:100%;
+    padding:10px;
 }
 .right-layout{
     width:20%;
@@ -30,6 +31,10 @@
     color: #fff;
     overflow: hidden;
 }
+.register{
+    padding: 10px;
+    margin-top: -33px;
+ }
 .collapse{
     font-size: 16px;
 }
@@ -57,6 +62,9 @@ input{
 }
 .nav div:hover{
     background: #eee;
+}
+.nav a{
+    color: #000;
 }
 .example {
     text-align: center;

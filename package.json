@@ -5,6 +5,7 @@
   },
   "dependencies": {
     "antd": "^2.1.0",
+    "moment": "^2.18.1",
     "react": "^15.1.0",
     "react-dom": "^15.1.0"
   },
@@ -29,12 +30,12 @@
     "pre-commit": "1.x",
     "redbox-react": "^1.2.6"
   },
-  "pre-commit": [
-    "lint"
-  ],
+//  "pre-commit": [
+//    "lint"
+//  ],
   "scripts": {
     "build": "antd build",
-    "dev":"antd server",
+    "dev": "antd server",
     "lint": "eslint --ext .js,.jsx src/",
     "start": "dora --plugins webpack",
     "test": "atool-test-mocha ./**/__tests__/*-test.js"

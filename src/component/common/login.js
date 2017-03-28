@@ -59,7 +59,7 @@ class Login extends React.Component{
           </label>
         </FormItem>
         <Button className="ml20" type="primary" htmlType="submit" onClick={()=>{()=>{this.submit()}}}>登录</Button>
-        <div><a onClick={()=>{this.regester()}}>没有账户？注册一个吧</a></div>
+        <div className="register"><a onClick={()=>{this.regester()}}>没有账户？注册一个吧</a></div>
         <Modal
           title="注册"
           visible={this.state.visible}
