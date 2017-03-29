@@ -47,6 +47,26 @@ input{
 .ant-rember{
     display: inline-block;
 }
+#pie,#dynamic ,#power-guide{
+    float:left;
+    width: 500px;
+    height:500px;
+}
+#line{
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    float: left;
+}
+.linePath{
+    fill:none;
+    stroke:#4682b4;
+    strike-width:2;
+}
+.domain,.tick line{
+    stroke:gray;
+    strike-width:1;
+}
 
 .header{
     height:44px;
